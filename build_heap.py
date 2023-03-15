@@ -21,6 +21,8 @@ def build_heap(data):
 
 def main():
     input_type=input()
+    n = 0
+    data = []
     
     if input_type == "I":
         n = int(input())
