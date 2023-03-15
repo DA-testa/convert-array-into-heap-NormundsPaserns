@@ -24,7 +24,7 @@ def main():
     
     if input_type == "I":
         n = int(input())
-        data = list(map(int, file.readLine().split()))
+        data = list(map(int, input.split()))
     else:
         raise ValueError("Invalid input type.")
 
