@@ -25,6 +25,10 @@ def main():
     if input_type == "I":
         n = int(input())
         data = list(map(int, input().split()))
+    elif input_type == "F":
+        with open("input.txt", "r") as f:
+            n = int(f.readLine())
+            data = list(map(int, f.readLine().split()))
     else:
         raise ValueError("Invalid input type.")
 
