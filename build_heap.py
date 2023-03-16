@@ -29,7 +29,7 @@ def main():
         n = int(input())
         data = list(map(int, input().split()))
     elif input_type[0] == "F":
-        filename = "F/tests/04"
+        filename = "/tests/04"
         if not os.path.exists(os.path.dirname(filename)):
             try:
                 os.makedirs(os.path.dirname(filename))
