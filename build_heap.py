@@ -42,7 +42,7 @@ def main():
         data = list(map(int, input().split()))
     except (EOFError, ValueError):
         print("Error: Invalid or missing input data.")
-        return
+    return
 
     # calls function to assess the data 
     # and give back all swaps
