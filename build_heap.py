@@ -37,10 +37,6 @@ def main():
     swaps = build_heap(data)
 
 
-    # input from keyboard
-    n = int(input())
-    data = list(map(int, input().split()))
-
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
 
