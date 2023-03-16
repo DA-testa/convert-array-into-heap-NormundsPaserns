@@ -38,8 +38,7 @@ def main():
 
     # input from keyboard
     n = int(input())
-    try:
-        data = list(map(int, input().split()))
+    data = list(map(int, input().split()))
     else:
         print("Error: Invalid data or missing data type.")
 
