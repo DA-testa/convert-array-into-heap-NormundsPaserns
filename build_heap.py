@@ -28,7 +28,8 @@ def main():
         n = int(input())
         data = list(map(int, input().split()))
     elif input_type[0] == "F":
-        with open("F/workspaces/convert-array-into-heap-NormundsPaserns/tests/04", "r") as f:
+        filename = "/vorkspaces/convert-array-into-heap-NormundsPaserns/tests/04"
+        with open(filename, "r") as f:
             n = int(f.readLine())
             data = list(map(int, f.readLine().split()))
 
