@@ -40,7 +40,7 @@ def main():
     n = int(input())
     try:
         data = list(map(int, input().split()))
-    except EOFError
+    except EOFError:
         print("Error: no input data type available.")
         sys.exit(1)
 
