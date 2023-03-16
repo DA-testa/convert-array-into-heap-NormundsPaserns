@@ -24,11 +24,12 @@ def main():
     n = 0
     data = []
     
-    if input_type == "I":
+    if input_type[0] == "I":
         n = int(input())
         data = list(map(int, input().split()))
-    elif input_type == "F":
-        with open("input.txt", "r") as f:
+    elif input_type[0] == "F":
+        input("F\r\n04")
+        with open("04", "r") as f:
             n = int(f.readLine())
             data = list(map(int, f.readLine().split()))
 
@@ -36,13 +37,6 @@ def main():
     assert len(set(data)) == n
     swaps = build_heap(data)
 
-    # input from keyboard
-    n = int(input())
-    data = list(map(int, input().split()))
-
-    # calls function to assess the data 
-    # and give back all swaps
-    swaps = build_heap(data)
 
     print(len(swaps))
     if len(swaps) <= 4*n:
