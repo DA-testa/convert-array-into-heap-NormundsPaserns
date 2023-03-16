@@ -1,5 +1,5 @@
 # python3
-import os
+
 
 def build_heap(data):
     n=len(data)
@@ -28,6 +28,7 @@ def main():
         n = int(input())
         data = list(map(int, input().split()))
     elif input_type[0] == "F":
+        input_file = "F/tests/n04"
         with open("04", "r") as f:
             n = int(f.readLine())
             data = list(map(int, f.readLine().split()))
