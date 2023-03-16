@@ -42,7 +42,6 @@ def main():
         data = list(map(int, input().split()))
     except EOFError:
         print("Error: no input data type available.")
-        sys.exit(1)
 
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
