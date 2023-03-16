@@ -43,9 +43,6 @@ def main():
     except EOFError:
         print("Error: no input data type available.")
 
-    # checks if lenght of data is the same as the said lenght
-    assert len(data) == n
-
     # calls function to assess the data 
     # and give back all swaps
     swaps = build_heap(data)
