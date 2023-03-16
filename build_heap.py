@@ -38,11 +38,8 @@ def main():
 
     # input from keyboard
     n = int(input())
-    try:
-        data = list(map(int, input().split()))
-    except (EOFError, ValueError):
-        print("Error: Invalid data or missing data type.")
-        return
+    data = list(map(int, input().split()))
+
 
     # calls function to assess the data 
     # and give back all swaps
