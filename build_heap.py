@@ -1,5 +1,6 @@
 # python3
-
+import os
+import errno
 
 def build_heap(data):
     n=len(data)
@@ -29,6 +30,12 @@ def main():
         data = list(map(int, input().split()))
     elif input_type[0] == "F":
         filename = "/vorkspaces/convert-array-into-heap-NormundsPaserns/tests/04"
+        if not os.path.exists(os.path.dirname(filename)):
+            try:
+                os.makedirs(os.path.dirname(filename))
+            except OSError as exc:
+                if exc.errno != errno.EEXIST:
+                    raise
         with open(filename, "r") as f:
             n = int(f.readLine())
             data = list(map(int, f.readLine().split()))
