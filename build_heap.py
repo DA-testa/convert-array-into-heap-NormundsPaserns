@@ -28,7 +28,7 @@ def main():
         n = int(input())
         data = list(map(int, input().split()))
     elif input_type[0] == "F":
-        input("F\04")
+        input("F\tests\04")
         with open("04", "r") as f:
             n = int(f.readLine())
             data = list(map(int, f.readLine().split()))
