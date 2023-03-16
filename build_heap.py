@@ -40,8 +40,9 @@ def main():
     n = int(input())
     try:
         data = list(map(int, input().split()))
-    except EOFError:
-        print("Error: no input data type available.")
+    except (EOFError, ValueError):
+        print("Error: Invalid or missing input data.")
+        return
 
     # calls function to assess the data 
     # and give back all swaps
