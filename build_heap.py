@@ -37,14 +37,8 @@ def main():
     swaps = build_heap(data)
 
     # input from keyboard
-    if input_type == "I":
-        n = int(input())
-        data = list(map(int, input().split()))
-    elif input_type == "F":
-        with open("input.txt", "r") as f:
-            n = int(f.readLine())
-            data = list(map(int, f.readLine().split()))
-
+    n = int(input())
+    data = list(map(int, input().split()))
 
     # calls function to assess the data 
     # and give back all swaps
