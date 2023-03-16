@@ -28,7 +28,7 @@ def main():
         n = int(input())
         data = list(map(int, input().split()))
     elif input_type[0] == "F":
-        os.makedirs(os.path.dirname(filename), exist_ok=true)
+        os.makedirs(os.path.tests("04"), exist_ok=true)
         with open("04", "r") as f:
             n = int(f.readLine())
             data = list(map(int, f.readLine().split()))
