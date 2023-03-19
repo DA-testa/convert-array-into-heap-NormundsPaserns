@@ -30,8 +30,8 @@ def main():
         data = list(map(int, input().split()))
     elif input_type[0] == "F":
         with open("tests/04", "r") as f:
-            n = int(f.readLine())
-            data = list(map(int, f.readLine().split()))
+            n = int(f.readline())
+            data = list(map(int, f.readline().split()))
 
     assert len(data) == n
     assert len(set(data)) == n
