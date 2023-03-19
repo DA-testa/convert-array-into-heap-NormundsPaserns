@@ -29,14 +29,7 @@ def main():
         n = int(input())
         data = list(map(int, input().split()))
     elif input_type[0] == "F":
-        filename = "/tests/04"
-        if not os.path.exists(os.path.dirname(filename)):
-            try:
-                os.makedirs(os.path.dirname(filename))
-            except OSError as exc:
-                if exc.errno != errno.EEXIST:
-                    raise
-        with open(filename, "r") as f:
+        with open("tests/04", "r") as f:
             n = int(f.readLine())
             data = list(map(int, f.readLine().split()))
 
